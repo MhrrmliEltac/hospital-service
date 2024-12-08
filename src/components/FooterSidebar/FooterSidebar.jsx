@@ -21,7 +21,7 @@ const FooterSidebar = () => {
 
   return (
     <div
-      className={`flex items-center justify-between border-t h-[10.5%] bg-[#F5F7FA] px-10`}
+      className={`flex items-center w-full justify-between border-t h-[10.5%] bg-[#F5F7FA] px-10`}
     >
       <div
         className={`${

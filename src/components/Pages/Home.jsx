@@ -13,10 +13,10 @@ const Home = () => {
 
   return (
     <PageContainer>
-      <div className="h-screen lg:h-full">
+      <div className=" lg:h-full">
         <Menu />
       </div>
-      <div className="h-screen lg:h-full">
+      <div className="lg:h-full">
         {sectionPage === 0 ? <Staff /> : ""}
         {sectionPage === 1 ? <ServiceStaff /> : ""}
         {sectionPage === 2 ? <DateTime /> : ""}
