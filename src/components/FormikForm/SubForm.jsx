@@ -17,7 +17,6 @@ const grey = {
 };
 const StyledInput = styled(Input)(
   ({ theme }) => `
-
   .${inputClasses.input} {
     width: 350px;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -33,9 +32,15 @@ const StyledInput = styled(Input)(
       theme.palette.mode === "dark" ? grey[900] : grey[50]
     };
     outline: none;
+    transition: width 0.3s ease;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 `
 );
+
 const StyledLabel = styled(FormLabel)(
   ({ theme }) => `
   font-family: 'Poppins', sans-serif;
