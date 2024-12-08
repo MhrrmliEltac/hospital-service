@@ -7,7 +7,7 @@ import { userStaff } from "../../data/userStaff";
 
 const Staff = () => {
   return (
-    <div className="bg-[#F5F7FA] h-[89.5%] w-full lg:w-[800px] flex flex-col ">
+    <div className="bg-[#F5F7FA] md:h-[89.5%] w-full lg:w-[800px] flex flex-col ">
       <Heading text={"Select Staff"} />
       <div className="p-7 pt-4">
         {userStaff.map((user, index) => (
