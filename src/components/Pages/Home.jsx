@@ -13,15 +13,18 @@ const Home = () => {
 
   return (
     <PageContainer>
-      <div className=" lg:h-full">
-        <Menu />
-      </div>
-      <div className="lg:h-full">
-        {sectionPage === 0 ? <Staff /> : ""}
-        {sectionPage === 1 ? <ServiceStaff /> : ""}
-        {sectionPage === 2 ? <DateTime /> : ""}
-        {sectionPage === 3 ? <Confirmation /> : ""}
-        <FooterSidebar />
+      <div className="max-w-screen lg:w-[1000px] lg:h-[641px] lg:flex lg:rounded-lg lg:shadow-lg flex ">
+        {" "}
+        <div className=" lg:h-full">
+          <Menu />
+        </div>
+        <div className="lg:h-full">
+          {sectionPage === 0 ? <Staff /> : ""}
+          {sectionPage === 1 ? <ServiceStaff /> : ""}
+          {sectionPage === 2 ? <DateTime /> : ""}
+          {sectionPage === 3 ? <Confirmation /> : ""}
+          <FooterSidebar />
+        </div>
       </div>
     </PageContainer>
   );
