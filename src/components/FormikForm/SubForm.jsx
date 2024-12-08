@@ -76,7 +76,7 @@ const SubForm = ({
 
   return (
     <form
-      className="flex flex-row flex-wrap md:gap-5 gap-1 w-[100%] justify-between"
+      className="flex flex-row flex-wrap lg:gap-5 gap-1 w-[100%] justify-between"
       onSubmit={handleSubmit}
     >
       <StyledFormGroup>
