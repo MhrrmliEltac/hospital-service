@@ -8,7 +8,7 @@ const ServiceStaff = () => {
   const asd = useSelector((state) => state.selectedItems.selected);
 
   return (
-    <div className="bg-[#F5F7FA] w-full lg:w-[800px] md:h-[89.5%] flex flex-col ">
+    <div className="bg-[#F5F7FA] w-full lg:w-[800px] h-[89.5%] flex flex-col ">
       <Heading text={"Select service"} />
       <div className="p-7 pt-4">
         {serviceStaff.map((service, index) => (
