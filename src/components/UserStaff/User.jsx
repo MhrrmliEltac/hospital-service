@@ -31,7 +31,7 @@ const User = ({ name, img, email }) => {
         <p className="poppins-semibold text-xs md:text-sm text-[#292d32] mb-2">
           {name}
         </p>
-        <p className="md:text-xs text-[7px] flex flex-wrap  text-[#828f9a] poppins-regular">
+        <p className="md:text-xs text-[5px] flex flex-wrap  text-[#828f9a] poppins-regular">
           {email}
         </p>
       </div>
