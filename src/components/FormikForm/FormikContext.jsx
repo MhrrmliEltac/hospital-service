@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { submitForm, setSubmitted } from "../redux/slice/formikSlice";
 import SubForm from "./SubForm";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const FormikContext = () => {
   const [formData, setFormData] = useState({
@@ -17,8 +18,17 @@ const FormikContext = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = (formDataItem) => {
-    dispatch(submitForm(formDataItem));
-    alert("Müraciətiniz qəbul edildi");
+    if (
+      formDataItem.name &&
+      formDataItem.surname &&
+      formDataItem.email &&
+      formDataItem.phone
+    ) {
+      dispatch(submitForm(formDataItem));
+      toast.success("Müraciət qəbul edildi");
+    } else {
+      toast.error("Zəhmət olmasa bütün xanaları doldurun");
+    }
   };
 
   useEffect(() => {
